@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Products Final Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Data Products Final Project">
+  <meta name="author" content="Avinash Singh Pundhir">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Data Products Final Project</h1>
+    <h2>Twitter Mining</h2>
+    <p>Avinash Singh Pundhir<br/>Analyst</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>This app will harvest tweets that have a matching string provided by user.</p></li>
+<li><p>A word cloud based on frequency of specific words will be provided.</p></li>
+<li><p>Following are some possible business usages of this application:</p></li>
+</ol>
+
+<ul>
+<li>Sentiment analysis on twitter</li>
+<li>Evaluate marketing initiative popularity</li>
+<li>Learning and development of people new to R </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>User Interface</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>User can fill in the string i.e. to be mined.</p></li>
+<li><p>User can select the number of top tweets they want to access using radio buttons.</p></li>
+<li><p>User can select total number of tweets to be pulled to get a meaningful word cloud using slider.</p></li>
+</ol>
+
+<ul>
+<li>Application URL</li>
+<li><a href="https://meavinash100.shinyapps.io/final_project">https://meavinash100.shinyapps.io/final_project</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Proposed Enhancements</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>Add a baysian sentiment analysis algorithm to identify associated sentiments.</p></li>
+<li><p>Enhance the total number of tweets limit that can be harvested.</p></li>
+<li><p>Add additional tools to allow users to mine twitter data in more detail from twitterR package ex. weekly, daily trends, specific tewwts from a particular user etc.</p></li>
+<li><p>Formatting data more accurately to remove duplicate entries and some mismatched searches for a more accurate analysis.</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Basic Code Walkthrough</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Tweets mined for the word &quot;data science&quot;&quot;</li>
+</ol>
+
+<pre><code class="r">top10
+</code></pre>
+
+<pre><code>##  [1] &quot;Check out a sample segment of Building Data Science Teams on&quot;                                            
+##  [2] &quot;Listening totalk about data science Sexiest Job of the st Century for radiology Makin me happy imagingIT&quot;
+##  [3] &quot;imagingITwebbinar on Data Science in Radiologyof the worlds data is onlyyears old&quot;                       
+##  [4] &quot;DHISCOs blog reports on Big Data Challenge winnersUNT Computer Science and Engineerings Team SQL&quot;        
+##  [5] &quot;Back by popular demand the FREE week DataScience amp MachineLearning EDX course Sign up&quot;                 
+##  [6] &quot;Hellocould you please help me with the list of faculties for Master of Data Science program&quot;             
+##  [7] &quot;sets standard for datascience reporting The Experts Were Wrong&quot;                                          
+##  [8] &quot;New to Data Science Our day London workshop will get you up to speeddatascience&quot;                         
+##  [9] &quot;RTTreat Customers Like Regulars with Data Science by billmanhvia CMSWire&quot;                                
+## [10] &quot;Check out a sample segment of Building Data Science Teams on&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='User Interface'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Proposed Enhancements'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Basic Code Walkthrough'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

@@ -1,0 +1,62 @@
+---
+title       : Data Products Final Project
+subtitle    : Twitter Mining
+author      : Avinash Singh Pundhir
+job         : Analyst
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+
+1. This app will harvest tweets that have a matching string provided by user.
+
+2. A word cloud based on frequency of specific words will be provided.
+
+3. Following are some possible business usages of this application:
+
+* Sentiment analysis on twitter
+* Evaluate marketing initiative popularity
+* Learning and development of people new to R 
+
+---
+
+## User Interface
+
+1. User can fill in the string i.e. to be mined.
+
+2. User can select the number of top tweets they want to access using radio buttons.
+
+3. User can select total number of tweets to be pulled to get a meaningful word cloud using slider.
+
+* Application URL
+- https://meavinash100.shinyapps.io/final_project
+
+---
+
+## Proposed Enhancements
+
+1. Add a baysian sentiment analysis algorithm to identify associated sentiments.
+
+2. Enhance the total number of tweets limit that can be harvested.
+
+3. Add additional tools to allow users to mine twitter data in more detail from twitterR package ex. weekly, daily trends, specific tewwts from a particular user etc.
+
+4. Formatting data more accurately to remove duplicate entries and some mismatched searches for a more accurate analysis.
+
+---
+
+## Basic Code Walkthrough
+
+1. Tweets mined for the word "data science""
+
+```{r, echo=TRUE}
+top10
+```
+
+
+
